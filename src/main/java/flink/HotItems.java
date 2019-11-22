@@ -85,14 +85,14 @@ public class HotItems {
                         return userBehavior.behavior.equals("pv");
                     }
                 })
-                .keyBy("itemId")
+                /*.keyBy("itemId")
                 .timeWindow(Time.minutes(60), Time.minutes(5))
                 .aggregate(new CountAgg(), new WindowResultFunction())
                 .keyBy("windowEnd")
-                .process(new TopNHotItems(3))
+                .process(new TopNHotItems(3))*/
                 .print();
 
-        env.execute("Hot Items Job");
+        //env.execute("Hot Items Job");
     }
 
     /** 求某个窗口中前 N 名的热门点击商品，key 为窗口时间戳，输出为 TopN 的结果字符串 */
