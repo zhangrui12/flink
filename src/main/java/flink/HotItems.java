@@ -155,7 +155,7 @@ public class HotItems {
                 result.append("No").append(i).append(":")
                         .append("  商品ID=").append(currentItem.itemId)
                         .append("  浏览量=").append(currentItem.viewCount)
-                        .append("  window=")
+                        .append("  window=").append(currentItem.windowEnd)
                         .append("\n");
             }
             result.append("====================================\n\n");
