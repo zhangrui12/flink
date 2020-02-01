@@ -153,9 +153,9 @@ public class HotItems {
                 ItemViewCount currentItem = allItems.get(i);
                 // No1:  商品ID=12224  浏览量=2413
                 result.append("No").append(i).append(":")
-                        .append("  shangpin123")
-                        .append("  woshishui")
-                        .append("  商品ID=").append(currentItem.itemId)
+                        .append("  shangpin")
+                        .append("  woshishui123")
+                        .append("  商品ID=123").append(currentItem.itemId)
                         .append("  浏览量=").append(currentItem.viewCount)
                         .append("  window=").append(currentItem.windowEnd)
                         .append("\n");
